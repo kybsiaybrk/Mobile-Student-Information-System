@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbackground"
+    tools:context=".MenuActivity">
+
+
+    <FrameLayout
+        android:id="@+id/frame1"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/appbackground" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/appbackground"
+            android:layout_gravity="center"
+            android:fontFamily="@font/aldrich"
+            android:text="Menü"
+            android:textSize="40sp"
+            />
+
+    </FrameLayout>
+
+
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/frame1"
+        app:layout_constraintStart_toStartOf="@id/frame1"
+        app:layout_constraintEnd_toEndOf="@id/frame1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:background="@drawable/menuitemleri"
+            android:orientation="horizontal">
+
+            <ImageButton
+
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/baseline_account_circle_24_2"
+                android:scaleType="centerInside"/>
+
+            <TextView
+                android:textSize="22sp"
+                android:fontFamily="@font/aldrich"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/appbackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profilim" />
+
+        </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:background="@drawable/menuitemleri"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="#00FFFFFF"
+                    android:padding="8dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/takvim2"
+                    android:scaleType="centerInside"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:fontFamily="@font/aldrich"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/appbackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Akademik Takvim" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:background="@drawable/menuitemleri"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:padding="14dp"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/derslerim"
+                    android:scaleType="centerInside"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:fontFamily="@font/aldrich"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/appbackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alınan Dersler" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:background="@drawable/menuitemleri"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/takvim3"
+                    android:scaleType="centerInside"
+                    android:padding="14dp"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:fontFamily="@font/aldrich"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/appbackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ders Programı" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:background="@drawable/menuitemleri"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/para"
+                    android:scaleType="centerInside"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:fontFamily="@font/aldrich"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/appbackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Harç Bilgileri" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:background="@drawable/menuitemleri"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/devamsizlik"
+                    android:scaleType="centerInside"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:fontFamily="@font/aldrich"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/appbackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Devamsızlık Durumu" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:background="@drawable/menuitemleri"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/akademikdurum"
+                    android:scaleType="centerInside"
+                    android:padding="13dp"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:fontFamily="@font/aldrich"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/appbackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Akademik Durum" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:background="@drawable/menuitemleri"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/mufredat"
+                    android:scaleType="centerInside"
+                    android:padding="13dp"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:fontFamily="@font/aldrich"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/appbackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Müfredat" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:background="@drawable/menuitemleri"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/tik"
+                    android:scaleType="centerInside"
+                    android:padding="12dp"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:fontFamily="@font/aldrich"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/appbackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yapılacaklar Listesi" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:background="@drawable/menuitemleri"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/danisman"
+                    android:scaleType="centerInside"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:fontFamily="@font/aldrich"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/appbackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Akademik Danışman" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:background="@drawable/menuitemleri"
+                android:orientation="horizontal">
+
+                <ImageButton
+
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:background="#00FFFFFF"
+                    android:backgroundTint="#00FFFFFF"
+                    android:src="@drawable/hazirlik"
+                    android:scaleType="centerInside"
+                    android:padding="10dp"/>
+
+                <TextView
+                    android:textSize="22sp"
+                    android:fontFamily="@font/aldrich"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/appbackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hazırlık Bilgileri" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
